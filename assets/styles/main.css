@@ -1,0 +1,168 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body e layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Carrossel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-item p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Bolinhas de navegação */
+.carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #3498db;
+}
+
+/* Biblioteca de APIs */
+.api-library {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.api-library h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.api-item {
+    background-color: var(--background-light);
+    color: var(--text-light);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.copy-code-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copy-code-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Tema claro e escuro */
+body.light-theme {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+/* Estilos gerais para o botão de alternância de tema */
+#theme-toggle {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: #2980b9;
+}

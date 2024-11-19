@@ -1,0 +1,56 @@
+/* Variáveis de tema */
+:root {
+    --background-light: #f5f5f5;
+    --text-light: #333333;
+    --link-light: #3498db;
+    --button-light: #3498db;
+    --button-hover-light: #2980b9;
+
+    --background-dark: #1a1a1a;
+    --text-dark: #f5f5f5;
+    --link-dark: #3498db;
+    --button-dark: #3498db;
+    --button-hover-dark: #2980b9;
+}
+
+/* Tema claro */
+.light-theme {
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+.light-theme a {
+    color: var(--link-light);
+}
+
+.light-theme button {
+    background-color: var(--button-light);
+}
+
+.light-theme button:hover {
+    background-color: var(--button-hover-light);
+}
+
+/* Tema escuro */
+.dark-theme {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+.dark-theme a {
+    color: var(--link-dark);
+}
+
+.dark-theme button {
+    background-color: var(--button-dark);
+}
+
+.dark-theme button:hover {
+    background-color: var(--button-hover-dark);
+}
+
+.dark-theme .api-item {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
